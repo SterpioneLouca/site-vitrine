@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegenUp - Vêtements & Nutrition Naturels</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-section">
+                    <a href="#accueil" style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
+                        <img src="Capture d'écran 2026-01-13 114353.png" alt="RegenUp Logo" class="logo">
+                        <span class="brand-name">REGENUP</span>
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À Propos</a></li>
+                    <li><a href="#produits">Produits</a></li>
+                    <li><a href="equipe.html">Équipe</a></li>
+                    <li><a href="#histoire">Histoire</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html" id="accountLink" style="display: none;"><i class="fas fa-sign-in-alt"></i> Connexion</a></li>
+                    <li><a href="#panier" class="btn-panier"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>La Puissance du Naturel</h1>
+                <p>Vêtements de performance et nutrition sportive 100% naturels</p>
+                <div class="hero-buttons">
+                    <a href="#produits" class="btn btn-primary">Découvrir nos produits</a>
+              
+                    <a href="#histoire" class="btn btn-secondary">Notre histoire</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-visual">
+                    <img src="Capture d'écran 2026-01-13 114353.png" alt="RegenUp" class="hero-logo">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="apropos" class="about-section">
+        <div class="container">
+            <h2>À Propos de RegenUp</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Notre Mission</h3>
+                    <p>RegenUp est né d'une passion simple : combiner <strong>la puissance du naturel</strong> avec <strong>la performance sportive</strong>. Nous croyons que vos muscles et votre corps méritent les meilleures substances naturelles, sans compromis.</p>
+                    
+                    <h3>Le Concept</h3>
+                    <p>Notre approche repose sur trois piliers :</p>
+                    <ul class="about-list">
+                        <li><strong>🌱 100% Naturel</strong> - Zéro synthétique, zéro chimie agressive. Tous nos produits utilisent des ingrédients biologiques certifiés.</li>
+                        <li><strong>♻️ Éco-Responsable</strong> - De la production à l'emballage, tout est pensé pour minimiser notre impact environnemental.</li>
+                        <li><strong>💪 Performance Réelle</strong> - Nos produits ne font pas de fausses promesses. Ils sont scientifiquement formulés pour supporter vos entraînements intensifs.</li>
+                    </ul>
+
+                    <h3>Nos Produits</h3>
+                    <p>RegenUp propose trois catégories complémentaires :</p>
+                    <div class="about-products">
+                        <div class="about-product-item">
+                            <div class="product-icon">👕</div>
+                            <h4>Textiles Bio</h4>
+                            <p>T-shirts, shorts, hoodies et leggings en coton biologique certifié. Conçus pour respirer avec vous pendant vos entraînements.</p>
+                        </div>
+                        <div class="about-product-item">
+                            <div class="product-icon">🥤</div>
+                            <h4>Boissons Naturelles</h4>
+                            <p>Boissons énergisantes pré-workout et de récupération post-exercice. Citron-gingembre, fruits rouges, betterave - toutes 100% naturelles.</p>
+                        </div>
+                        <div class="about-product-item">
+                            <div class="product-icon">💊</div>
+                            <h4>Compléments Nutritionnels</h4>
+                            <p>Magnésium, Ashwagandha, Spiruline, protéines végétales. Pour renforcer votre récupération et optimiser votre performance.</p>
+                        </div>
+                    </div>
+
+                    <h3>Notre Engagement</h3>
+                    <p>Pour chaque produit vendu, <strong>RegenUp s'engage à soutenir des projets de reforestation</strong>. Parce que prendre soin de votre corps doit aussi signifier prendre soin de la planète.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Produits -->
+    <section id="produits" class="products-section">
+        <div class="container">
+            <h2>Notre Sélection de Produits</h2>
+            
+            <!-- Section Code Promo -->
+            <div class="promo-section">
+                <div class="promo-card" id="promoCard">
+                    <div class="promo-stars" id="promoStars">
+                        <span class="star">✨</span>
+                        <span class="star">⭐</span>
+                        <span class="star">✨</span>
+                    </div>
+                    <div class="promo-content">
+                        <h3><i class="fas fa-gift"></i> Offre Spéciale Limitée</h3>
+                        <p class="promo-code-text">Code: <strong>REGENUP10</strong></p>
+                        <p class="promo-discount">
+                            <span class="discount-value">10% de réduction</span> sur tous les produits
+                        </p>
+                    </div>
+                    <div class="promo-actions">
+                        <button class="btn-apply-promo" id="btnApplyPromo" onclick="togglePromo()">
+                            <i class="fas fa-check-circle"></i> Appliquer
+                        </button>
+                        <button class="btn-copy-promo" onclick="copyPromoCode()">
+                            <i class="fas fa-copy"></i> Copier le code
+                        </button>
+                    </div>
+                </div>
+                <div class="promo-status" id="promoStatus" style="display: none;">
+                    <div class="status-badge active">
+                        <i class="fas fa-check"></i> Réduction appliquée : -10%
+                        <button class="btn-remove-promo" onclick="removePromo()">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="filters">
+                <button class="filter-btn active" onclick="filterProducts('tous')">Tous</button>
+                <button class="filter-btn" onclick="filterProducts('textiles')">Textiles</button>
+                <button class="filter-btn" onclick="filterProducts('boissons')">Boissons</button>
+                <button class="filter-btn" onclick="filterProducts('complements')">Compléments</button>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Produits générés par JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Panier -->
+    <section id="panier" class="cart-section">
+        <div class="container">
+            <h2>Votre Panier</h2>
+            <div class="cart-content">
+                <div class="cart-items" id="cartItems">
+                    <!-- Items générés par JS -->
+                </div>
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Sous-total:</span>
+                        <span id="subtotal">0€</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Livraison:</span>
+                        <span id="shipping">5€</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="total">0€</span>
+                    </div>
+                    <button class="btn btn-primary btn-full" onclick="checkout()">Procéder au paiement</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Histoire -->
+    <section id="histoire" class="history-section">
+        <div class="container">
+            <h2>Notre Histoire</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h3>La Naissance de RegenUp</h3>
+                        <p>Louca STERPIONE & Thibaut DELAPART créent RegenUp avec une vision claire : "muscle + naturel"</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Fin 2020</div>
+                    <div class="timeline-content">
+                        <h3>Recherche & Développement</h3>
+                        <p>Recherche intensive de tissus biologiques, extraits végétaux et création du logo emblématique triangle vert</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <h3>Premier Lancement</h3>
+                        <p>Lancement des t-shirts et shorts bio, boisson citron-gingembre et pré-workout betterave</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>Extension Gamme</h3>
+                        <p>Boissons fruits rouges, compléments magnésium et ashwagandha, partenariats éco-responsables</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>Certifications & Croissance</h3>
+                        <p>Certifications bio, hoodies et leggings, e-shop carbone-neutre, dépassement 10k ventes</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024-2025</div>
+                    <div class="timeline-content">
+                        <h3>Expansion</h3>
+                        <p>Partenariats athlètes, gamme "Régénération", dons reforestation</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2026</div>
+                    <div class="timeline-content">
+                        <h3>Expansion Internationale</h3>
+                        <p>Nouvelles innovations et conquête des marchés mondiaux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Produit -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeProductModal()">✕</button>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="">
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalCategory"></p>
+                    <p id="modalDescription"></p>
+                    <div class="modal-price">
+                        <span id="modalPrice"></span>€
+                    </div>
+                    <div class="modal-actions">
+                        <div class="size-selector" id="sizeSelector">
+                            <label>Taille:</label>
+                            <select id="sizeInput" class="size-input">
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M" selected>M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </div>
+                        <div class="quantity-selector">
+                            <label>Quantité:</label>
+                            <input type="number" id="quantityInput" value="1" min="1" class="quantity-input">
+                        </div>
+                        <button class="btn btn-primary" onclick="addToCart()">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Panier -->
+    <section id="panier" class="cart-section" style="display:none;">
+        <div class="container">
+            <h2>Votre Panier</h2>
+            <div class="cart-content">
+                <div class="cart-items" id="cartItems">
+                    <!-- Items générés par JS -->
+                </div>
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Sous-total:</span>
+                        <span id="subtotal">0€</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Livraison:</span>
+                        <span id="shipping">5€</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="total">0€</span>
+                    </div>
+                    <button class="btn btn-primary btn-full" onclick="checkout()">Procéder au paiement</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Nous Contacter</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Téléphone</h3>
+                        <p>+33 (0)X XX XX XX XX</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>contact@regenup.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Adresse</h3>
+                        <p>RegenUp SARL, France</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Horaires</h3>
+                        <p>Lun-Ven: 9h-18h</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>À Propos</h4>
+                    <p>RegenUp : La puissance du naturel. Vêtements & nutrition 100% bio pour une performance optimale.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#produits">Produits</a></li>
+                        <li><a href="#histoire">Histoire</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Conditions d'utilisation</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RegenUp. Tous droits réservés. | "La puissance du naturel" 🌱</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
